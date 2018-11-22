@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Box arragne</title>
+    <style media="screen">
+      .box_block{
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+      }
+      .box_inline_block{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        display: inline-block;
+      }
+      .box_inline{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Block : default setting, do not place side</h1>
+    <div class="box_block"></div>
+    <div class="box_block"></div>
+    <div class="box_block"></div>
+
+    <h1>Inline Block : place next to each others</h1>
+    <div class="box_inline_block"></div>
+    <div class="box_inline_block"></div>
+    <div class="box_inline_block"></div>
+
+    <h1>Inline : remove every property, it is not the box, the text. without height and width</h1>
+    <div class="box_inline"></div>
+    <div class="box_inline"></div>
+    <div class="box_inline"></div>
+  </body>
+</html>
