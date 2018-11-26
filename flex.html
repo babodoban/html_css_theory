@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex</title>
+    <style media="screen">
+      body, html {
+        height : 100%;
+        margin : 0;
+        padding : 0;
+      }
+      .textBox_1 {
+        background-color : gray;
+      }
+      .boxFather_row {
+        display : flex;
+        justify-content : space-around; /*horizon*/
+        align-items : center; /*vertical*/
+        height : 100%;
+        flex-direction : row;
+        background-color : gray;
+        flex-wrap : no-wrap; /*default*/
+      }
+      .textBox_2 {
+        background-color : green;
+      }
+      .boxFather_column {
+        display : flex;
+        justify-content : space-around; /*vertical*/
+        align-items : center; /*horizon*/
+        height : 100%;
+        flex-direction : column;
+        background-color : green;
+      }
+      .boxChild {
+        background-color : black;
+        height : 100px;
+        width : 100px;
+        color : white;
+        font-size : 30px;
+        border : 1px solid white;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="textBox_1">
+      flex-directoin is row : horizon, default setting
+      <br> justify-content = horizon
+      <br> align-items = vertical
+    </div>
+    <div class="boxFather_row">
+      <div class="boxChild">1</div>
+      <div class="boxChild">2</div>
+      <div class="boxChild">3</div>
+      <div class="boxChild">4</div>
+      <div class="boxChild">5</div>
+      <div class="boxChild">6</div>
+      <div class="boxChild">7</div>
+      <div class="boxChild">8</div>
+      <div class="boxChild">9</div>
+    </div>
+    <div class="textBox_2">
+      flex-directoin is column : vertical
+      <br> justify-content = vertical
+      <br> align-items = horizon
+    </div>
+    <div class="boxFather_column">
+      <div class="boxChild">1</div>
+      <div class="boxChild">2</div>
+      <div class="boxChild">3</div>
+    </div>
+  </body>
+</html>
